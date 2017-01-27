@@ -1,0 +1,106 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signupFrame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2d5bba"
+    tools:context="com.example.muhammadimran.parkingbookingsystem.UserPanel.UserSignUp">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_admin_regestration_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradiant"
+        android:orientation="vertical"
+        tools:context="com.example.muhammadimran.parkingbookingsystem.AdminPanel.AdminRegestrationPanel">
+
+        <EditText
+            android:id="@+id/FirstName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_text_design"
+            android:hint="First Name"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/LastName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_text_design"
+            android:hint="Last Name"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/Email"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_text_design"
+            android:hint="Email"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_text_design"
+            android:hint="Password"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/ConfirmPassword"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_text_design"
+            android:hint="Confirm Password"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/DateOfBirth"
+            android:inputType="date"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_text_design"
+            android:hint="Date Of Birth"
+            android:padding="8dp" />
+
+        <EditText
+            android:inputType="phone"
+            android:id="@+id/Contact"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_text_design"
+            android:hint="Contact "
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/SignUp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#0e3aed"
+            android:padding="8dp"
+            android:text="SignUp" />
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+</FrameLayout>

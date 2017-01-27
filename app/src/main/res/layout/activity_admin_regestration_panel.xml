@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adminframe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_admin_regestration_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradiant"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context="com.example.muhammadimran.parkingbookingsystem.AdminPanel.AdminRegestrationPanel">
+
+        <EditText
+            android:id="@+id/Adminemail"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_text_design"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/AdminPassword"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_text_design"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/AdminLoginButton"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="#0e3aed"
+
+            android:text="Login" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
+
+
+

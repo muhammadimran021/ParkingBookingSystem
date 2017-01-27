@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/userframe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2d5bba">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/activity_user_regestration_panel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:context="com.example.muhammadimran.parkingbookingsystem.UserPanel.UserRegestrationPanel">
+
+            <EditText
+                android:id="@+id/UserEmail"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/edit_text_design"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/userPassword"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/edit_text_design"
+                android:padding="8dp" />
+
+            <Button
+                android:id="@+id/userLoginButton"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="#0e3aed"
+
+                android:text="Login" />
+
+            <TextView
+                android:id="@+id/UserAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="don't have Account" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>
