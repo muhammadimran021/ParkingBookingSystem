@@ -1,4 +1,4 @@
-package com.example.muhammadimran.parkingbookingsystem;
+package com.example.muhammadimran.parkingbookingsystem.Models;
 
 /**
  * Created by muhammad imran on 1/28/2017.

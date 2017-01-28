@@ -11,7 +11,7 @@ import android.widget.ListView;
 
 import com.example.muhammadimran.parkingbookingsystem.Adapters.UsersAdapters;
 import com.example.muhammadimran.parkingbookingsystem.R;
-import com.example.muhammadimran.parkingbookingsystem.UserPanel.UserModel;
+import com.example.muhammadimran.parkingbookingsystem.Models.UserModel;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;

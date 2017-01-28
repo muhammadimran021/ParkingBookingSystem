@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.example.muhammadimran.parkingbookingsystem.ParkingAreas.TimeModel;
+import com.example.muhammadimran.parkingbookingsystem.Models.TimeModel;
 import com.example.muhammadimran.parkingbookingsystem.R;
 
 import java.util.ArrayList;

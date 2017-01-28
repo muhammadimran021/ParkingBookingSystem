@@ -1,6 +1,5 @@
 package com.example.muhammadimran.parkingbookingsystem.ParkingAreas;
 
-import android.content.DialogInterface;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
@@ -14,7 +13,7 @@ import android.widget.EditText;
 
 import com.example.muhammadimran.parkingbookingsystem.Adapters.parkingAdapter;
 import com.example.muhammadimran.parkingbookingsystem.R;
-import com.example.muhammadimran.parkingbookingsystem.userfeedbackModel;
+import com.example.muhammadimran.parkingbookingsystem.Models.userfeedbackModel;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -23,7 +22,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class ParkingActivity extends AppCompatActivity {
     TabLayout tabLayout;

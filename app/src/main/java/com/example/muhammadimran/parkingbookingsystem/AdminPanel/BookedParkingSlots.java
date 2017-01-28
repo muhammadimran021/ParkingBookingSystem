@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 
 import com.example.muhammadimran.parkingbookingsystem.Adapters.parkingViewAdapter;
-import com.example.muhammadimran.parkingbookingsystem.ParkingAreas.TimeModel;
+import com.example.muhammadimran.parkingbookingsystem.Models.TimeModel;
 import com.example.muhammadimran.parkingbookingsystem.R;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
@@ -17,7 +17,6 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import java.sql.Time;
 import java.util.ArrayList;
 
 /**

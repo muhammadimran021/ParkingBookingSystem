@@ -8,7 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.example.muhammadimran.parkingbookingsystem.R;
-import com.example.muhammadimran.parkingbookingsystem.UserPanel.UserModel;
+import com.example.muhammadimran.parkingbookingsystem.Models.UserModel;
 
 import java.util.ArrayList;
 
