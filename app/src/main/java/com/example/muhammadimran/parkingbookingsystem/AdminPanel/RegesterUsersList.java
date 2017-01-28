@@ -49,6 +49,9 @@ public class RegesterUsersList extends Fragment {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                 Log.d("USer-Info", dataSnapshot.getValue().toString());
+                UserModel model = dataSnapshot.getValue(UserModel.class);
+                arrayList.add(model);
+                usersAdapters.notifyDataSetChanged();
             }
 
             @Override

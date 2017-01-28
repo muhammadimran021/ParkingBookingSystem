@@ -5,9 +5,12 @@ import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 
 import com.example.muhammadimran.parkingbookingsystem.Adapters.fragmentsAdapter;
 import com.example.muhammadimran.parkingbookingsystem.R;
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
 
@@ -16,11 +19,13 @@ public class AdminViewPanel extends AppCompatActivity {
     fragmentsAdapter adapter;
     TabLayout tabLayout;
     ViewPager viewPager;
+    FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_view_panel);
+        mAuth = FirebaseAuth.getInstance();
         tabLayout = (TabLayout) findViewById(R.id.Admin_sliding_tabs);
         viewPager = (ViewPager) findViewById(R.id.UserParking);
         arrayList = new ArrayList<>();
@@ -60,5 +65,24 @@ public class AdminViewPanel extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.logout, menu);
+        return true;
+
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.logout:
+                mAuth.signOut();
+                finish();
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
