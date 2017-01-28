@@ -3,6 +3,7 @@ package com.example.muhammadimran.parkingbookingsystem.ParkingAreas;
 
 import android.app.DatePickerDialog;
 import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
@@ -85,6 +86,8 @@ public class HomeParking extends Fragment {
 
         clickOnSecondParking();
         clickOnThirdParking();
+
+
         return view;
     }
 
@@ -363,4 +366,6 @@ public class HomeParking extends Fragment {
 
         builder.create().show();
     }
+
+
 }

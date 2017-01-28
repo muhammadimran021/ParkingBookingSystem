@@ -1,11 +1,14 @@
 package com.example.muhammadimran.parkingbookingsystem.AdminPanel;
 
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.muhammadimran.parkingbookingsystem.Adapters.parkingViewAdapter;
@@ -16,6 +19,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
@@ -77,4 +81,38 @@ public class BookedParkingSlots extends Fragment {
         return view;
     }
 
+    public void deleteSlots() {
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, final int i, long l) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+                builder.setMessage("are you sure to want to delete parking?");
+                builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        mDatabase.child("Reserve-parking").addListenerForSingleValueEvent(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(DataSnapshot dataSnapshot) {
+                                int position = 0;
+                                for (DataSnapshot data : dataSnapshot.getChildren()) {
+                                    if (position == i) {
+                                        DatabaseReference ref = data.getRef();
+                                        ref.removeValue();
+                                        timeModelArrayList.remove(i);
+                                        adapter.notifyDataSetChanged();
+                                    }
+                                }
+                            }
+
+                            @Override
+                            public void onCancelled(DatabaseError databaseError) {
+
+                            }
+                        });
+                    }
+                });
+                builder.create().show();
+            }
+        });
+    }
 }
