@@ -23,7 +23,7 @@
             android:text="Select Time" />
 
         <Spinner
-            android:id="@+id/startTime"
+            android:id="@+id/selectHours"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:entries="@array/hours" />
@@ -41,7 +41,7 @@
 
         <Spinner
 
-            android:id="@+id/startHours"
+            android:id="@+id/selectMint"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:entries="@array/mint" />

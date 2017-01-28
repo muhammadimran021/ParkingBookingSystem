@@ -9,15 +9,18 @@ public class TimeModel {
     private String date;
     private String time;
     private String mint;
+    private String parking;
 
     public TimeModel() {
     }
 
-    public TimeModel(String uuid, String date, String time, String mint) {
+
+    public TimeModel(String uuid, String date, String time, String mint, String parking) {
         this.uuid = uuid;
         this.date = date;
         this.time = time;
         this.mint = mint;
+        this.parking = parking;
     }
 
     public String getUuid() {
@@ -50,5 +53,13 @@ public class TimeModel {
 
     public void setMint(String mint) {
         this.mint = mint;
+    }
+
+    public String getParking() {
+        return parking;
+    }
+
+    public void setParking(String parking) {
+        this.parking = parking;
     }
 }

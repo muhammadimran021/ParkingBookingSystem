@@ -1,4 +1,4 @@
-package com.example.muhammadimran.parkingbookingsystem.AdminPanel;
+package com.example.muhammadimran.parkingbookingsystem.Adapters;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

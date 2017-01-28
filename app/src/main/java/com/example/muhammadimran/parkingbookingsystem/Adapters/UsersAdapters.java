@@ -1,4 +1,4 @@
-package com.example.muhammadimran.parkingbookingsystem;
+package com.example.muhammadimran.parkingbookingsystem.Adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import com.example.muhammadimran.parkingbookingsystem.R;
 import com.example.muhammadimran.parkingbookingsystem.UserPanel.UserModel;
 
 import java.util.ArrayList;
@@ -15,23 +16,23 @@ import java.util.ArrayList;
  * Created by muhammad imran on 1/27/2017.
  */
 
-public class UsersAdapter extends BaseAdapter {
-    ArrayList<UserModel> userModels;
+public class UsersAdapters extends BaseAdapter {
+    ArrayList<UserModel> userModelArrayList;
     Context context;
 
-    public UsersAdapter(ArrayList<UserModel> userModels, Context context) {
-        this.userModels = userModels;
+    public UsersAdapters(ArrayList<UserModel> userModelArrayList, Context context) {
+        this.userModelArrayList = userModelArrayList;
         this.context = context;
     }
 
     @Override
     public int getCount() {
-        return 0;
+        return userModelArrayList.size();
     }
 
     @Override
     public Object getItem(int i) {
-        return null;
+        return userModelArrayList.get(i);
     }
 
     @Override
@@ -46,10 +47,11 @@ public class UsersAdapter extends BaseAdapter {
         TextView email = (TextView) view1.findViewById(R.id.User_email);
         TextView contact = (TextView) view1.findViewById(R.id.usercontact);
 
-        UserModel model = userModels.get(i);
-        name.setText("Name: " + model.getFname() + " " + model.getLname());
-        email.setText("Email: " + model.getEmail());
-        contact.setText("Contact" + model.getContact());
+        UserModel model = userModelArrayList.get(i);
+        name.setText(model.getFname());
+        email.setText(model.getEmail());
+        contact.setText(model.getContact());
+
         return view1;
     }
 }

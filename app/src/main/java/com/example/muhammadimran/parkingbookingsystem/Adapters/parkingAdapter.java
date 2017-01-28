@@ -1,8 +1,9 @@
-package com.example.muhammadimran.parkingbookingsystem.ParkingAreas;
+package com.example.muhammadimran.parkingbookingsystem.Adapters;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 
@@ -12,6 +13,7 @@ import java.util.ArrayList;
 
 public class parkingAdapter extends FragmentStatePagerAdapter {
     ArrayList<Fragment> fragmentArrayList;
+
 
     public parkingAdapter(FragmentManager fm, ArrayList<Fragment> fragmentArrayList) {
         super(fm);
