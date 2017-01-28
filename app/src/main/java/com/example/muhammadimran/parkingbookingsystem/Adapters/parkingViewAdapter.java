@@ -45,13 +45,13 @@ public class parkingViewAdapter extends BaseAdapter {
         View view1 = LayoutInflater.from(context).inflate(R.layout.parkin_view_layout, null);
         TextView parkingbook = (TextView) view1.findViewById(R.id.booked_parking);
         TextView time = (TextView) view1.findViewById(R.id.parkingTime);
-        TextView mint = (TextView) view1.findViewById(R.id.mint);
+        TextView mint = (TextView) view1.findViewById(R.id.end_time);
         TextView date = (TextView) view1.findViewById(R.id.date);
 
         TimeModel timeModel = timeModelArrayList.get(i);
         parkingbook.setText("Booked: " + timeModel.getParking());
-        time.setText("time: " + timeModel.getTime());
-        mint.setText("Mint: " + timeModel.getMint());
+        time.setText("Start Time: " + timeModel.getStart_time());
+        mint.setText("End Time: " + timeModel.getEnd_time());
         date.setText("Date: " + timeModel.getDate());
 
 

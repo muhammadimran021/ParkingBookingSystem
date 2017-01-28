@@ -20,7 +20,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Select Time" />
+            android:text="Start Time" />
 
         <Spinner
             android:id="@+id/selectHours"
@@ -37,14 +37,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Select Mint" />
+            android:text="End Mint" />
 
         <Spinner
 
             android:id="@+id/selectMint"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:entries="@array/mint" />
+            android:entries="@array/end_time" />
     </LinearLayout>
 
 

@@ -7,8 +7,8 @@ package com.example.muhammadimran.parkingbookingsystem.ParkingAreas;
 public class TimeModel {
     private String uuid;
     private String date;
-    private String time;
-    private String mint;
+    private String start_time;
+    private String end_time;
     private String parking;
 
     public TimeModel() {
@@ -18,8 +18,8 @@ public class TimeModel {
     public TimeModel(String uuid, String date, String time, String mint, String parking) {
         this.uuid = uuid;
         this.date = date;
-        this.time = time;
-        this.mint = mint;
+        this.start_time = time;
+        this.end_time = mint;
         this.parking = parking;
     }
 
@@ -39,20 +39,20 @@ public class TimeModel {
         this.date = date;
     }
 
-    public String getTime() {
-        return time;
+    public String getStart_time() {
+        return start_time;
     }
 
-    public void setTime(String time) {
-        this.time = time;
+    public void setStart_time(String start_time) {
+        this.start_time = start_time;
     }
 
-    public String getMint() {
-        return mint;
+    public String getEnd_time() {
+        return end_time;
     }
 
-    public void setMint(String mint) {
-        this.mint = mint;
+    public void setEnd_time(String end_time) {
+        this.end_time = end_time;
     }
 
     public String getParking() {

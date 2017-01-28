@@ -31,9 +31,11 @@ public class AdminViewPanel extends AppCompatActivity {
         arrayList = new ArrayList<>();
         arrayList.add(new RegesterUsersList());
         arrayList.add(new BookedParkingSlots());
+        arrayList.add(new UserFeedback());
 
         tabLayout.addTab(tabLayout.newTab().setText("Users"));
         tabLayout.addTab(tabLayout.newTab().setText("Registered Parking"));
+        tabLayout.addTab(tabLayout.newTab().setText("Users Feedback"));
 
 
         adapter = new fragmentsAdapter(getSupportFragmentManager(), arrayList);
@@ -50,6 +52,9 @@ public class AdminViewPanel extends AppCompatActivity {
                         break;
                     case 1:
                         new BookedParkingSlots();
+                        break;
+                    case 2:
+                        new UserFeedback();
                         break;
                 }
             }
